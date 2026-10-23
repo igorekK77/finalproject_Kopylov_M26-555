@@ -1,8 +1,10 @@
 import hashlib
 import secrets
 from datetime import datetime
+from abc import ABC, abstractmethod
 
 from valutatrade_hub.core.constants import DEFAULT_EXCHANGE_RATES
+from valutatrade_hub.core.exceptions import InsufficientFundsError
 
 
 class User:
@@ -104,8 +106,8 @@ class Wallet:
         if amount <= self._balance:
             self._balance -= amount
         else:
-            raise ValueError("Сумма снятия не может быть больше "
-                             "суммы баланса")
+            raise InsufficientFundsError(self.balance, self.currency_code,
+                                         amount)
 
     def get_balance_info(self) -> str:
         """Функция вывод информации о текущем балансе."""
@@ -182,3 +184,44 @@ class Portfolio:
     def user_id(self):
         """Возвращает ID пользователя"""
         return self._user_id
+
+
+class Currency(ABC):
+    """Абстрактный базовый класс для валют"""
+    def __init__(self, name: str, code: str):
+        """Инициализация абстрактного базового класса"""
+        if not isinstance(name, str) or not name.strip():
+            raise ValueError(f"Имя name = {name} не может быть пустым")
+        if (not isinstance(code, str) or not 2 <= len(code) <= 5 or not code.isupper()
+                or " " in code):
+            raise ValueError(f"{code} должен быть в верхнем регистре, 2–5 символов, без пробелов.")
+        self.name = name
+        self.code = code
+
+    @abstractmethod
+    def get_display_info(self) -> str:
+        """Функция возвращает строковое представление валюты"""
+        pass
+
+class FiatCurrency(Currency):
+    """Класс-наследник Currency для обычных валют"""
+    def __init__(self, name: str, code: str, issuing_country: str) -> None:
+        """Инициализация класса-наследника FiatCurrency"""
+        super().__init__(name, code)
+        self.issuing_country = issuing_country
+
+    def get_display_info(self) -> str:
+        return (f"Fiat: \"[FIAT] {self.code} — {self.name} ("
+                f"Issuing: {self.issuing_country})\"")
+
+class CryptoCurrency(Currency):
+    """Класс-наследник Currency для криптовалют"""
+    def __init__(self, name: str, code: str, algorithm: str, market_cap: float) -> None:
+        """Инициализация класса-наследника CryptoCurrency"""
+        super().__init__(name, code)
+        self.algorithm = algorithm
+        self.market_cap = market_cap
+
+    def get_display_info(self) -> str:
+        return (f"Crypto: \"[CRYPTO] {self.code} — {self.name} "
+                f"(Algo: {self.algorithm}, MCAP: {self.market_cap:.2e})\"")

@@ -1,6 +1,11 @@
-FILE_PATH_USERS = "../../data/users.json"
-FILE_PATH_PORTFOLIOS = "../../data/portfolios.json"
-FILE_PATH_RATES = "../../data/rates.json"
+from valutatrade_hub.infra.settings import SettingsLoader
+
+
+settings = SettingsLoader()
+
+FILE_PATH_USERS = settings.get("users_file")
+FILE_PATH_PORTFOLIOS = settings.get("portfolios_file")
+FILE_PATH_RATES = settings.get("rates_file")
 
 DEFAULT_EXCHANGE_RATES = {
     "USD_USD": {"rate": 1.0},
