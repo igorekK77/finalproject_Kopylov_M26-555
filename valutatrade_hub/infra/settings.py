@@ -12,7 +12,7 @@ class SettingsLoader:
 
     def __init__(self):
         """Инициализация класса с настройками и открытие файла с настройками"""
-        self.config_path = "../../data/config.json"
+        self.config_path = "data/config.json"
         with open(self.config_path, "r", encoding="utf-8") as file:
             self._config = json.load(file)
 

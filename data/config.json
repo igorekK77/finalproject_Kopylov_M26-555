@@ -1,7 +1,7 @@
 {
-    "users_file": "../../data/users.json",
-    "portfolios_file": "../../data/portfolios.json",
-    "rates_file": "../../data/rates.json",
+    "users_file": "data/users.json",
+    "portfolios_file": "data/portfolios.json",
+    "rates_file": "data/rates.json",
     "rates_ttl_seconds": 300,
     "default_base_currency": "USD",
     "log_file": "logs/actions.log",
