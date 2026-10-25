@@ -9,8 +9,8 @@
     {
         "user_id": 2,
         "username": "test",
-        "hashed_password": "7f2be5232e2647eeff6fa7b5ad39fc9b3399144fec716b3282bea2bee646a7a2",
-        "salt": "aaed26ced287ecb9f8a36b05555efcef",
-        "registration_date": "2026-10-25T17:37:38.877605"
+        "hashed_password": "730939fcf67a2a0cb9ae5cd8bf7af32d06ba63ad15508b5f6e02888958a90a25",
+        "salt": "700077d4149f5ad40e517cc66f2f897e",
+        "registration_date": "2026-10-25T21:27:47.419061"
     }
 ]

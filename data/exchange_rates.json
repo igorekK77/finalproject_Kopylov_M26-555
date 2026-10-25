@@ -4579,5 +4579,1532 @@
         "meta": {
             "raw_id": "solana"
         }
+    },
+    {
+        "id": "USD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "USD",
+        "to_currency": "USD",
+        "rate": 1.0,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "AED_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "AED",
+        "to_currency": "USD",
+        "rate": 0.27229407760381213,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "AFN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "AFN",
+        "to_currency": "USD",
+        "rate": 0.015386887909598957,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "ALL_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ALL",
+        "to_currency": "USD",
+        "rate": 0.012373925169924927,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "AMD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "AMD",
+        "to_currency": "USD",
+        "rate": 0.0027679546144017786,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "ANG_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ANG",
+        "to_currency": "USD",
+        "rate": 0.5586592178770949,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "AOA_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "AOA",
+        "to_currency": "USD",
+        "rate": 0.001079796764972084,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "ARS_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ARS",
+        "to_currency": "USD",
+        "rate": 0.0006543376369119714,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "AUD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "AUD",
+        "to_currency": "USD",
+        "rate": 0.7026913077085236,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "AWG_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "AWG",
+        "to_currency": "USD",
+        "rate": 0.5586592178770949,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "AZN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "AZN",
+        "to_currency": "USD",
+        "rate": 0.5880969183721477,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BAM_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BAM",
+        "to_currency": "USD",
+        "rate": 0.5728032993470042,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BBD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BBD",
+        "to_currency": "USD",
+        "rate": 0.5,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BDT_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BDT",
+        "to_currency": "USD",
+        "rate": 0.008083061540389038,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BGN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BGN",
+        "to_currency": "USD",
+        "rate": 0.5728032993470042,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BHD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BHD",
+        "to_currency": "USD",
+        "rate": 2.6595744680851063,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BIF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BIF",
+        "to_currency": "USD",
+        "rate": 0.00033274022388425964,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BMD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BMD",
+        "to_currency": "USD",
+        "rate": 1.0,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BND_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BND",
+        "to_currency": "USD",
+        "rate": 0.7824113919098662,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BOB_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BOB",
+        "to_currency": "USD",
+        "rate": 0.08516436722875148,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BRL_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BRL",
+        "to_currency": "USD",
+        "rate": 0.19824356204032276,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BSD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BSD",
+        "to_currency": "USD",
+        "rate": 1.0,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BTN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BTN",
+        "to_currency": "USD",
+        "rate": 0.010519096367545642,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BWP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BWP",
+        "to_currency": "USD",
+        "rate": 0.07069086179229611,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BYN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BYN",
+        "to_currency": "USD",
+        "rate": 0.33987016959521466,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BZD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BZD",
+        "to_currency": "USD",
+        "rate": 0.5,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "CAD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "CAD",
+        "to_currency": "USD",
+        "rate": 0.7140816909454442,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "CDF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "CDF",
+        "to_currency": "USD",
+        "rate": 0.00043323299079622504,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "CHF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "CHF",
+        "to_currency": "USD",
+        "rate": 1.2124151309408342,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "CLF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "CLF",
+        "to_currency": "USD",
+        "rate": 40.14452027298274,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "CLP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "CLP",
+        "to_currency": "USD",
+        "rate": 0.001015522051452034,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "CNH_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "CNH",
+        "to_currency": "USD",
+        "rate": 0.14992728526664567,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "CNY_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "CNY",
+        "to_currency": "USD",
+        "rate": 0.1494947078873408,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "COP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "COP",
+        "to_currency": "USD",
+        "rate": 0.00031445719138597356,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "CRC_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "CRC",
+        "to_currency": "USD",
+        "rate": 0.0021923982973834823,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "CUP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "CUP",
+        "to_currency": "USD",
+        "rate": 0.041666666666666664,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "CVE_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "CVE",
+        "to_currency": "USD",
+        "rate": 0.010159968707296381,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "CZK_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "CZK",
+        "to_currency": "USD",
+        "rate": 0.04606002542513404,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "DJF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "DJF",
+        "to_currency": "USD",
+        "rate": 0.005626797058310498,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "DKK_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "DKK",
+        "to_currency": "USD",
+        "rate": 0.1497858062969953,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "DOP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "DOP",
+        "to_currency": "USD",
+        "rate": 0.0162826405883895,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "DZD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "DZD",
+        "to_currency": "USD",
+        "rate": 0.0074270147262848,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "EGP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "EGP",
+        "to_currency": "USD",
+        "rate": 0.018089136026685094,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "ERN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ERN",
+        "to_currency": "USD",
+        "rate": 0.06666666666666667,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "ETB_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ETB",
+        "to_currency": "USD",
+        "rate": 0.00617763670801153,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "EUR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "EUR",
+        "to_currency": "USD",
+        "rate": 1.1203226529240422,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "FJD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "FJD",
+        "to_currency": "USD",
+        "rate": 0.44424700133274103,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "FKP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "FKP",
+        "to_currency": "USD",
+        "rate": 1.3374348000534972,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "FOK_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "FOK",
+        "to_currency": "USD",
+        "rate": 0.1497858062969953,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "GBP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "GBP",
+        "to_currency": "USD",
+        "rate": 1.3374348000534972,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "GEL_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "GEL",
+        "to_currency": "USD",
+        "rate": 0.3851041706781685,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "GGP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "GGP",
+        "to_currency": "USD",
+        "rate": 1.3374348000534972,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "GHS_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "GHS",
+        "to_currency": "USD",
+        "rate": 0.08567805613626238,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "GIP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "GIP",
+        "to_currency": "USD",
+        "rate": 1.3374348000534972,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "GMD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "GMD",
+        "to_currency": "USD",
+        "rate": 0.013395255132726885,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "GNF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "GNF",
+        "to_currency": "USD",
+        "rate": 0.00011310073526222491,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "GTQ_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "GTQ",
+        "to_currency": "USD",
+        "rate": 0.13079931461159144,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "GYD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "GYD",
+        "to_currency": "USD",
+        "rate": 0.004777486191870534,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "HKD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "HKD",
+        "to_currency": "USD",
+        "rate": 0.12751198612669593,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "HNL_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "HNL",
+        "to_currency": "USD",
+        "rate": 0.03723271564258082,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "HRK_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "HRK",
+        "to_currency": "USD",
+        "rate": 0.1486878299011226,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "HTG_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "HTG",
+        "to_currency": "USD",
+        "rate": 0.007634432818899802,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "HUF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "HUF",
+        "to_currency": "USD",
+        "rate": 0.0030568204848545246,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "IDR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "IDR",
+        "to_currency": "USD",
+        "rate": 5.5288332607664755e-05,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "ILS_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ILS",
+        "to_currency": "USD",
+        "rate": 0.32146071750032146,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "IMP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "IMP",
+        "to_currency": "USD",
+        "rate": 1.3374348000534972,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "INR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "INR",
+        "to_currency": "USD",
+        "rate": 0.010526149587111783,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "IQD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "IQD",
+        "to_currency": "USD",
+        "rate": 0.0006590117183486721,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "IRR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "IRR",
+        "to_currency": "USD",
+        "rate": 5.877300083510857e-07,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "ISK_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ISK",
+        "to_currency": "USD",
+        "rate": 0.00821545524302138,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "JEP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "JEP",
+        "to_currency": "USD",
+        "rate": 1.3374348000534972,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "JMD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "JMD",
+        "to_currency": "USD",
+        "rate": 0.006293911836141782,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "JOD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "JOD",
+        "to_currency": "USD",
+        "rate": 1.4104372355430184,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "JPY_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "JPY",
+        "to_currency": "USD",
+        "rate": 0.006375818814531256,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "KES_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "KES",
+        "to_currency": "USD",
+        "rate": 0.0077020003635344175,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "KGS_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "KGS",
+        "to_currency": "USD",
+        "rate": 0.011429485787434425,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "KHR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "KHR",
+        "to_currency": "USD",
+        "rate": 0.00024631462214979807,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "KID_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "KID",
+        "to_currency": "USD",
+        "rate": 0.7027900766041183,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "KMF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "KMF",
+        "to_currency": "USD",
+        "rate": 0.0022771584159903885,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "KRW_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "KRW",
+        "to_currency": "USD",
+        "rate": 0.0007548189529000522,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "KWD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "KWD",
+        "to_currency": "USD",
+        "rate": 3.2237266279819474,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "KYD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "KYD",
+        "to_currency": "USD",
+        "rate": 1.2000480019200768,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "KZT_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "KZT",
+        "to_currency": "USD",
+        "rate": 0.0022233754129363987,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "LAK_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "LAK",
+        "to_currency": "USD",
+        "rate": 4.485246754100931e-05,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "LBP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "LBP",
+        "to_currency": "USD",
+        "rate": 1.11731843575419e-05,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "LKR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "LKR",
+        "to_currency": "USD",
+        "rate": 0.003011962007111242,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "LRD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "LRD",
+        "to_currency": "USD",
+        "rate": 0.005861238690739946,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "LSL_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "LSL",
+        "to_currency": "USD",
+        "rate": 0.06030162874699245,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "LYD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "LYD",
+        "to_currency": "USD",
+        "rate": 0.15582634711877086,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MAD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MAD",
+        "to_currency": "USD",
+        "rate": 0.10190667386807162,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MDL_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MDL",
+        "to_currency": "USD",
+        "rate": 0.05554475518649152,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MGA_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MGA",
+        "to_currency": "USD",
+        "rate": 0.00021825851660555535,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MKD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MKD",
+        "to_currency": "USD",
+        "rate": 0.018188233667875576,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MMK_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MMK",
+        "to_currency": "USD",
+        "rate": 0.0004763938056037917,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MNT_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MNT",
+        "to_currency": "USD",
+        "rate": 0.0002790811643377809,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MOP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MOP",
+        "to_currency": "USD",
+        "rate": 0.12379761565792242,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MRU_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MRU",
+        "to_currency": "USD",
+        "rate": 0.024921373067970553,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MUR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MUR",
+        "to_currency": "USD",
+        "rate": 0.02122975477510259,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MVR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MVR",
+        "to_currency": "USD",
+        "rate": 0.06471821688368842,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MWK_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MWK",
+        "to_currency": "USD",
+        "rate": 0.0005734507882883916,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MXN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MXN",
+        "to_currency": "USD",
+        "rate": 0.05352574052862021,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MYR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MYR",
+        "to_currency": "USD",
+        "rate": 0.24483400254627366,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "MZN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "MZN",
+        "to_currency": "USD",
+        "rate": 0.015693191822591605,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "NAD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "NAD",
+        "to_currency": "USD",
+        "rate": 0.06030162874699245,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "NGN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "NGN",
+        "to_currency": "USD",
+        "rate": 0.0007543081176678422,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "NIO_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "NIO",
+        "to_currency": "USD",
+        "rate": 0.02715989027404329,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "NOK_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "NOK",
+        "to_currency": "USD",
+        "rate": 0.10716850103417604,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "NPR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "NPR",
+        "to_currency": "USD",
+        "rate": 0.006574436094180112,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "NZD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "NZD",
+        "to_currency": "USD",
+        "rate": 0.569573389531241,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "OMR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "OMR",
+        "to_currency": "USD",
+        "rate": 2.600780234070221,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "PAB_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "PAB",
+        "to_currency": "USD",
+        "rate": 1.0,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "PEN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "PEN",
+        "to_currency": "USD",
+        "rate": 0.2904275092936803,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "PGK_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "PGK",
+        "to_currency": "USD",
+        "rate": 0.2234736748011084,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "PHP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "PHP",
+        "to_currency": "USD",
+        "rate": 0.01571469654135244,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "PKR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "PKR",
+        "to_currency": "USD",
+        "rate": 0.0036124440026024046,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "PLN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "PLN",
+        "to_currency": "USD",
+        "rate": 0.2545954478333927,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "PYG_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "PYG",
+        "to_currency": "USD",
+        "rate": 0.00017436288151819016,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "QAR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "QAR",
+        "to_currency": "USD",
+        "rate": 0.2747252747252747,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "RON_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "RON",
+        "to_currency": "USD",
+        "rate": 0.20942846970617188,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "RSD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "RSD",
+        "to_currency": "USD",
+        "rate": 0.00953271580400355,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "RUB_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "RUB",
+        "to_currency": "USD",
+        "rate": 0.01232433205201361,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "RWF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "RWF",
+        "to_currency": "USD",
+        "rate": 0.0006764707573529834,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SAR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SAR",
+        "to_currency": "USD",
+        "rate": 0.26666666666666666,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SBD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SBD",
+        "to_currency": "USD",
+        "rate": 0.12576401639962775,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SCR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SCR",
+        "to_currency": "USD",
+        "rate": 0.07177102173226538,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SDG_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SDG",
+        "to_currency": "USD",
+        "rate": 0.0019636223255218473,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SEK_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SEK",
+        "to_currency": "USD",
+        "rate": 0.10067958721369243,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SGD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SGD",
+        "to_currency": "USD",
+        "rate": 0.7824113919098662,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SHP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SHP",
+        "to_currency": "USD",
+        "rate": 1.3374348000534972,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SLE_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SLE",
+        "to_currency": "USD",
+        "rate": 0.04353239245322445,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SLL_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SLL",
+        "to_currency": "USD",
+        "rate": 4.353232044071425e-05,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SOS_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SOS",
+        "to_currency": "USD",
+        "rate": 0.0017491795473333234,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SRD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SRD",
+        "to_currency": "USD",
+        "rate": 0.026539841610225268,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SSP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SSP",
+        "to_currency": "USD",
+        "rate": 0.0001738936581156779,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "STN_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "STN",
+        "to_currency": "USD",
+        "rate": 0.04572599156812716,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SYP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SYP",
+        "to_currency": "USD",
+        "rate": 0.008203196457531642,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "SZL_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SZL",
+        "to_currency": "USD",
+        "rate": 0.06030162874699245,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "THB_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "THB",
+        "to_currency": "USD",
+        "rate": 0.029623573254653122,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "TJS_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "TJS",
+        "to_currency": "USD",
+        "rate": 0.10851636426773158,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "TMT_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "TMT",
+        "to_currency": "USD",
+        "rate": 0.28568163638441324,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "TND_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "TND",
+        "to_currency": "USD",
+        "rate": 0.3331889514543698,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "TOP_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "TOP",
+        "to_currency": "USD",
+        "rate": 0.4194103091053978,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "TRY_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "TRY",
+        "to_currency": "USD",
+        "rate": 0.020103816106373313,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "TTD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "TTD",
+        "to_currency": "USD",
+        "rate": 0.14757969303423848,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "TVD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "TVD",
+        "to_currency": "USD",
+        "rate": 0.7027900766041183,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "TWD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "TWD",
+        "to_currency": "USD",
+        "rate": 0.030689626599313166,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "TZS_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "TZS",
+        "to_currency": "USD",
+        "rate": 0.00037871529169030484,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "UAH_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "UAH",
+        "to_currency": "USD",
+        "rate": 0.022124530130291357,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "UGX_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "UGX",
+        "to_currency": "USD",
+        "rate": 0.0002431124894616814,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "UYU_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "UYU",
+        "to_currency": "USD",
+        "rate": 0.0249038090375923,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "UZS_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "UZS",
+        "to_currency": "USD",
+        "rate": 8.423739786836759e-05,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "VES_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "VES",
+        "to_currency": "USD",
+        "rate": 0.0011270119981697324,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "VND_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "VND",
+        "to_currency": "USD",
+        "rate": 3.873365340087326e-05,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "VUV_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "VUV",
+        "to_currency": "USD",
+        "rate": 0.008438996603303868,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "WST_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "WST",
+        "to_currency": "USD",
+        "rate": 0.366246703779666,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "XAF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "XAF",
+        "to_currency": "USD",
+        "rate": 0.001707868714765601,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "XCD_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "XCD",
+        "to_currency": "USD",
+        "rate": 0.37037037037037035,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "XCG_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "XCG",
+        "to_currency": "USD",
+        "rate": 0.5586592178770949,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "XDR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "XDR",
+        "to_currency": "USD",
+        "rate": 1.3548299688389107,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "XOF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "XOF",
+        "to_currency": "USD",
+        "rate": 0.001707868714765601,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "XPF_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "XPF",
+        "to_currency": "USD",
+        "rate": 0.009387996507665298,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "YER_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "YER",
+        "to_currency": "USD",
+        "rate": 0.0042338078020610175,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "ZAR_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ZAR",
+        "to_currency": "USD",
+        "rate": 0.06030162874699245,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "ZMW_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ZMW",
+        "to_currency": "USD",
+        "rate": 0.049631486214854706,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "ZWG_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ZWG",
+        "to_currency": "USD",
+        "rate": 0.037625811306556296,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "ZWL_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ZWL",
+        "to_currency": "USD",
+        "rate": 0.037625811306556296,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "ExchangeRate-API",
+        "meta": {}
+    },
+    {
+        "id": "BTC_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "BTC",
+        "to_currency": "USD",
+        "rate": 80605,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "CoinGecko",
+        "meta": {
+            "raw_id": "bitcoin"
+        }
+    },
+    {
+        "id": "ETH_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "ETH",
+        "to_currency": "USD",
+        "rate": 2352.58,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "CoinGecko",
+        "meta": {
+            "raw_id": "ethereum"
+        }
+    },
+    {
+        "id": "SOL_USD_2026-10-25T18:28:03.519842+00:00",
+        "from_currency": "SOL",
+        "to_currency": "USD",
+        "rate": 101.73,
+        "timestamp": "2026-10-25T18:28:03.519842+00:00",
+        "source": "CoinGecko",
+        "meta": {
+            "raw_id": "solana"
+        }
     }
 ]

@@ -133,8 +133,6 @@ def buy(currency: str, amount: float, user_id: int) -> dict[str, float]:
     rates = load_json(FILE_PATH_RATES)["pairs"]
     currency = currency.strip().upper()
     get_currency(currency)
-    if currency == "USD":
-        raise ValueError("Нельзя купить USD за USD")
     key = f"{currency}_USD"
     if key not in rates:
         raise ValueError(f"Валюта {currency} не найдена")
@@ -146,18 +144,11 @@ def buy(currency: str, amount: float, user_id: int) -> dict[str, float]:
         raise ValueError(f"Портфель пользователя {user_id} не найден")
     wallets = user_portfolio.wallets
 
-    if "USD" not in wallets:
-        user_portfolio.add_currency("USD")
     if currency not in wallets:
         user_portfolio.add_currency(currency)
 
     sum_buy = amount * rates[key]["rate"]
     old_balance = user_portfolio.wallets[currency].balance
-    if sum_buy > user_portfolio.wallets["USD"].balance:
-        raise InsufficientFundsError(user_portfolio.wallets["USD"].balance,
-                                     user_portfolio.wallets["USD"].currency_code,
-                                     sum_buy)
-    user_portfolio.wallets["USD"].withdraw(sum_buy)
     user_portfolio.wallets[currency].deposit(amount)
     new_balance = user_portfolio.wallets[currency].balance
     save_portfolios(portfolios)

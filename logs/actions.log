@@ -20,3 +20,13 @@ ERROR 2026-10-25T17:38:30 BUY user_id='2' currency='EUR' amount=1000.0 result=ER
 INFO 2026-10-25T17:38:42 BUY user_id='2' currency='BTC' amount=0.0001 rate=80262.00 base='USD' result=OK balance_before=0.0 balance_after=0.0001
 INFO 2026-10-25T17:38:54 SELL user_id='2' currency='BTC' amount=0.0001 rate=80262.00 base='USD' result=OK balance_before=0.0001 balance_after=0.0
 INFO 2026-10-25T17:38:59 SELL user_id='2' currency='EUR' amount=10.0000 rate=1.12 base='USD' result=OK balance_before=10.0 balance_after=0.0
+INFO 2026-10-25T21:28:02 Начало обновления курсов
+INFO 2026-10-25T21:28:03 ExchangeRate-API: получено 166 курсов
+INFO 2026-10-25T21:28:03 CoinGecko: получено 3 курсов
+INFO 2026-10-25T21:28:03 Обновление курсов завершено
+INFO 2026-10-25T21:28:12 BUY user_id='2' currency='EUR' amount=10.0000 rate=1.12 base='USD' result=OK balance_before=0.0 balance_after=10.0
+ERROR 2026-10-25T21:28:29 BUY user_id='2' currency='ABC' amount=10.0 result=ERROR error_type='CurrencyNotFoundError' error_message=Валюта с кодом 'ABC' не найдена
+ERROR 2026-10-25T21:28:38 BUY user_id='2' currency='EUR' amount=-5.0 result=ERROR error_type='ValueError' error_message=Значение amount = -5.0 меньше нуля
+INFO 2026-10-25T21:28:48 BUY user_id='2' currency='BTC' amount=0.0001 rate=80605.00 base='USD' result=OK balance_before=0.0 balance_after=0.0001
+INFO 2026-10-25T21:29:03 SELL user_id='2' currency='BTC' amount=0.0001 rate=80605.00 base='USD' result=OK balance_before=0.0001 balance_after=0.0
+INFO 2026-10-25T21:29:10 SELL user_id='2' currency='EUR' amount=10.0000 rate=1.12 base='USD' result=OK balance_before=10.0 balance_after=0.0
