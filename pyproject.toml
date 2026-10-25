@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-project = "main:main"
+valutatradehub = "main:main"
 
 [build-system]
 requires = ["hatchling"]

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from valutatrade_hub.cli.interface import interface
+
 
 def main():
-    print("Final project is running")
+    interface()

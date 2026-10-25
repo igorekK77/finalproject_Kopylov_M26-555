@@ -251,6 +251,15 @@ def print_help() -> None:
     print("<command> get-rate --from <валюта> --to <валюта> - "
           "получить текущий курс одной валюты к другой.")
 
+    print("<command> update-rates [--source <источник>] - "
+          "обновить курсы валют из внешних API "
+          "(coingecko или exchangerate).")
+
+    print("<command> show-rates [--currency <валюта>] [--top <число>] "
+          "[--base <валюта>] - "
+          "показать курсы валют из локального кеша "
+          "(по умолчанию базовая валюта USD).")
+
     print("\nОбщие команды:")
 
     print("<command> help - вывести справочную информацию.")

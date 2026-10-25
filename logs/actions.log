@@ -1,0 +1,22 @@
+INFO 2026-10-25T17:15:26 Начало обновления курсов
+INFO 2026-10-25T17:15:26 ExchangeRate-API: получено 166 курсов
+INFO 2026-10-25T17:15:26 CoinGecko: получено 3 курсов
+INFO 2026-10-25T17:15:26 Обновление курсов завершено
+ERROR 2026-10-25T17:16:33 BUY user_id='1' currency='EUR' amount=3.0 result=ERROR error_type='InsufficientFundsError' error_message=Недостаточно средств: доступно 0.0 USD, требуется 3.3609679587721266 USD
+ERROR 2026-10-25T17:17:14 BUY user_id='1' currency='EUR' amount=3.0 result=ERROR error_type='TypeError' error_message='int' object is not subscriptable
+ERROR 2026-10-25T17:17:25 BUY user_id='1' currency='EUR' amount=3.0 result=ERROR error_type='InsufficientFundsError' error_message=Недостаточно средств: доступно 0.0 USD, требуется 3.3609679587721266 USD
+INFO 2026-10-25T17:19:00 BUY user_id='1' currency='EUR' amount=3.0000 rate=1.12 base='USD' result=OK balance_before=0.0 balance_after=3.0
+INFO 2026-10-25T17:20:49 SELL user_id='1' currency='EUR' amount=3.0000 rate=1.12 base='USD' result=OK balance_before=3.0 balance_after=0.0
+INFO 2026-10-25T17:29:42 Начало обновления курсов
+INFO 2026-10-25T17:29:43 ExchangeRate-API: получено 166 курсов
+INFO 2026-10-25T17:29:43 CoinGecko: получено 3 курсов
+INFO 2026-10-25T17:29:43 Обновление курсов завершено
+INFO 2026-10-25T17:35:16 Начало обновления курсов
+INFO 2026-10-25T17:35:18 ExchangeRate-API: получено 166 курсов
+INFO 2026-10-25T17:35:18 CoinGecko: получено 3 курсов
+INFO 2026-10-25T17:35:18 Обновление курсов завершено
+INFO 2026-10-25T17:38:24 BUY user_id='2' currency='EUR' amount=10.0000 rate=1.12 base='USD' result=OK balance_before=0.0 balance_after=10.0
+ERROR 2026-10-25T17:38:30 BUY user_id='2' currency='EUR' amount=1000.0 result=ERROR error_type='InsufficientFundsError' error_message=Недостаточно средств: доступно 88.79677347075958 USD, требуется 1120.3226529240421 USD
+INFO 2026-10-25T17:38:42 BUY user_id='2' currency='BTC' amount=0.0001 rate=80262.00 base='USD' result=OK balance_before=0.0 balance_after=0.0001
+INFO 2026-10-25T17:38:54 SELL user_id='2' currency='BTC' amount=0.0001 rate=80262.00 base='USD' result=OK balance_before=0.0001 balance_after=0.0
+INFO 2026-10-25T17:38:59 SELL user_id='2' currency='EUR' amount=10.0000 rate=1.12 base='USD' result=OK balance_before=10.0 balance_after=0.0
