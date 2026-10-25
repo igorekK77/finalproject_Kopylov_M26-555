@@ -1,9 +1,13 @@
 import logging
+from datetime import datetime, timezone
+
 from valutatrade_hub.core.exceptions import ApiRequestError
-from valutatrade_hub.parser_service.api_clients import CoinGeckoClient, ExchangeRateApiClient
+from valutatrade_hub.parser_service.api_clients import (
+    CoinGeckoClient,
+    ExchangeRateApiClient,
+)
 from valutatrade_hub.parser_service.config import ParserConfig
 from valutatrade_hub.parser_service.storage import RatesStorage
-from datetime import datetime, timezone
 
 
 class RatesUpdater:
@@ -13,23 +17,33 @@ class RatesUpdater:
         self.exchange_rate_client = ExchangeRateApiClient()
         self.storage = RatesStorage()
 
-    def run_update(self):
+    def run_update(self, source: str | None = None):
         """Получает данные от каждого клиента, обрабатывает их и сохраняет"""
         logger = logging.getLogger("valutatrade_hub")
+        if source not in (None, "exchangerate", "coingecko"):
+            raise ValueError(f"Неизвестный источник: {source}")
         logger.info("Начало обновления курсов")
-        try:
-            exchange_rate = self.exchange_rate_client.fetch_rates()
-            logger.info(f"ExchangeRate-API: получено {len(exchange_rate)} курсов")
-        except ApiRequestError as e:
-            logger.error(f"Ошибка: ExchangeRate-API: {e}")
-            exchange_rate = {}
-
-        try:
-            coin_gecko = self.coin_gecko_client.fetch_rates()
-            logger.info(f"CoinGecko: получено {len(coin_gecko)} курсов")
-        except ApiRequestError as e:
-            logger.error(f"Ошибка CoinGecko: {e}")
-            coin_gecko = {}
+        exchange_rate = {}
+        coin_gecko = {}
+        errors = []
+        if source is None or source == "exchangerate":
+            try:
+                exchange_rate = self.exchange_rate_client.fetch_rates()
+                logger.info(
+                    f"ExchangeRate-API: получено {len(exchange_rate)} курсов"
+                )
+            except ApiRequestError as e:
+                logger.error(f"Ошибка ExchangeRate-API: {e}")
+                errors.append("exchangerate")
+        if source is None or source == "coingecko":
+            try:
+                coin_gecko = self.coin_gecko_client.fetch_rates()
+                logger.info(
+                    f"CoinGecko: получено {len(coin_gecko)} курсов"
+                )
+            except ApiRequestError as e:
+                logger.error(f"Ошибка CoinGecko: {e}")
+                errors.append("coingecko")
 
         time_now = datetime.now(timezone.utc).isoformat()
         all_rates = {}
@@ -80,9 +94,18 @@ class RatesUpdater:
             "last_refresh": time_now
         }
 
-        self.storage.save_rates(result)
+        if all_rates:
+            self.storage.save_rates(result)
+
         if all_exchange_rates:
             self.storage.save_history(all_exchange_rates)
 
         logger.info("Обновление курсов завершено")
+
+        return {
+            "success": len(errors) == 0,
+            "total_updated": len(all_rates),
+            "last_refresh": time_now if all_rates else None,
+            "errors": errors
+        }
 

@@ -1,7 +1,6 @@
 from valutatrade_hub.core.utils import load_json
 from valutatrade_hub.infra.settings import SettingsLoader
 
-
 settings = SettingsLoader()
 
 class ParserConfig:

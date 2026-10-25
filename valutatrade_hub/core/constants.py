@@ -1,6 +1,5 @@
 from valutatrade_hub.infra.settings import SettingsLoader
 
-
 settings = SettingsLoader()
 
 FILE_PATH_USERS = settings.get("users_file")

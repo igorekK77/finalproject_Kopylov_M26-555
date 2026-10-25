@@ -1,7 +1,7 @@
 import hashlib
 import secrets
-from datetime import datetime
 from abc import ABC, abstractmethod
+from datetime import datetime
 
 from valutatrade_hub.core.constants import DEFAULT_EXCHANGE_RATES
 from valutatrade_hub.core.exceptions import InsufficientFundsError
@@ -131,7 +131,8 @@ class Wallet:
 class Portfolio:
     """Класс управление всеми кошельками одного пользователя"""
 
-    def __init__(self, user_id: int, wallets: dict[str, Wallet], user: User | None = None):
+    def __init__(self, user_id: int, wallets: dict[str, Wallet],
+                 user: User | None = None):
         """Инициализация класса управления всеми кошельками одного пользователя"""
         self._user_id = user_id
         self._wallets = wallets
@@ -143,8 +144,8 @@ class Portfolio:
             raise ValueError(f"Кошелек для валюты с кодом {currency_code} уже создан")
         self._wallets[currency_code] = Wallet(currency_code, 0.0)
 
-    def get_total_value(self, base_currency='USD', exchange_rates : dict[str, float]
-                                                                    | None = None) -> float:
+    def get_total_value(self, base_currency='USD',
+                        exchange_rates : dict[str, float] | None = None) -> float:
         """Функция возвращает общую стоимость всех валют пользователя в указанной
         базовой валюте"""
         if exchange_rates is None:
@@ -194,7 +195,8 @@ class Currency(ABC):
             raise ValueError(f"Имя name = {name} не может быть пустым")
         if (not isinstance(code, str) or not 2 <= len(code) <= 5 or not code.isupper()
                 or " " in code):
-            raise ValueError(f"{code} должен быть в верхнем регистре, 2–5 символов, без пробелов.")
+            raise ValueError(f"{code} должен быть в верхнем регистре, 2–5 символов, "
+                             f"без пробелов.")
         self.name = name
         self.code = code
 

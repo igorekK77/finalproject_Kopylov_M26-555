@@ -1,16 +1,29 @@
 import hashlib
 import secrets
-from valutatrade_hub.core.constants import FILE_PATH_USERS, FILE_PATH_PORTFOLIOS, FILE_PATH_RATES, \
-    DEFAULT_EXCHANGE_RATES
-from valutatrade_hub.core.currencies import get_currency
-from valutatrade_hub.core.exceptions import InsufficientFundsError, CurrencyNotFoundError, ApiRequestError
-from valutatrade_hub.core.models import User, Portfolio, Wallet
-from valutatrade_hub.core.utils import load_json, save_json, load_portfolios, save_portfolios
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
+from valutatrade_hub.core.constants import (
+    FILE_PATH_PORTFOLIOS,
+    FILE_PATH_RATES,
+    FILE_PATH_USERS,
+)
+from valutatrade_hub.core.currencies import get_currency
+from valutatrade_hub.core.exceptions import (
+    ApiRequestError,
+    CurrencyNotFoundError,
+    InsufficientFundsError,
+)
+from valutatrade_hub.core.models import Portfolio, User, Wallet
+from valutatrade_hub.core.utils import (
+    load_json,
+    load_portfolios,
+    save_json,
+    save_portfolios,
+)
 from valutatrade_hub.decorators import log_action
 from valutatrade_hub.infra.settings import SettingsLoader
-
+from valutatrade_hub.parser_service.config import ParserConfig
+from valutatrade_hub.parser_service.updater import RatesUpdater
 
 settings = SettingsLoader()
 base_currency = settings.get("default_base_currency")
@@ -71,13 +84,14 @@ def login_user(username: str, password: str) -> int:
         raise ValueError("Неверный пароль")
     return user["user_id"]
 
-def show_portfolio(user_id: int, base: str = base_currency) -> tuple[dict[str, dict[str, float]],
+def show_portfolio(user_id: int, base: str = base_currency) -> tuple[dict[str,
+                                                            dict[str, float]],
                                                              float, str, str]:
     """Функция показывает все кошельки и итоговую стоимость
     в базовой валюте"""
     portfolios = load_json(FILE_PATH_PORTFOLIOS)
     users = load_json(FILE_PATH_USERS)
-    rates = load_json(FILE_PATH_RATES)
+    rates = load_json(FILE_PATH_RATES)["pairs"]
 
     user_portfolio = next((portfolio for portfolio in portfolios
                            if portfolio["user_id"] == user_id), None)
@@ -116,7 +130,7 @@ def buy(currency: str, amount: float, user_id: int) -> dict[str, float]:
         raise TypeError("Значение количество покупаемой валюты должно быть числом")
     if amount <= 0:
         raise ValueError(f"Значение amount = {amount} меньше нуля")
-    rates = load_json(FILE_PATH_RATES)
+    rates = load_json(FILE_PATH_RATES)["pairs"]
     currency = currency.strip().upper()
     get_currency(currency)
     if currency == "USD":
@@ -163,7 +177,7 @@ def sell(currency: str, amount: float, user_id: int) -> dict[str, float]:
     if currency == "USD":
         raise ValueError("Нельзя продать USD за USD")
     get_currency(currency)
-    rates = load_json(FILE_PATH_RATES)
+    rates = load_json(FILE_PATH_RATES)["pairs"]
     portfolios = load_portfolios()
     user_portfolio = next((portfolio for portfolio in portfolios if
                            portfolio.user_id == user_id), None)
@@ -202,10 +216,11 @@ def get_rate(from_currency: str, to_currency: str):
     if not isinstance(from_currency, str) or not isinstance(to_currency, str):
         raise TypeError("Значение кода валюты должно быть передано строкой")
     if not from_currency.isupper() or not to_currency.isupper():
-        raise ValueError("Значение кода валюты должно быть не пустым и в верхнем регистре")
+        raise ValueError("Значение кода валюты должно быть не пустым и "
+                         "в верхнем регистре")
     get_currency(from_currency)
     get_currency(to_currency)
-    rates = load_json(FILE_PATH_RATES)
+    rates = load_json(FILE_PATH_RATES)["pairs"]
     key_to_usd = f"{from_currency}_USD"
     key_to_currency = f"{to_currency}_USD"
     if key_to_usd not in rates:
@@ -223,30 +238,108 @@ def get_rate(from_currency: str, to_currency: str):
     update_at_usd = datetime.fromisoformat(date_time_usd)
     update_at_currency = datetime.fromisoformat(date_time_currency)
 
-    age_usd = datetime.now() - update_at_usd
-    age_currency = datetime.now() - update_at_currency
+    age_usd = datetime.now(timezone.utc) - update_at_usd
+    age_currency = datetime.now(timezone.utc) - update_at_currency
     ttl = timedelta(seconds=settings.get("rates_ttl_seconds", 300))
 
-    if age_usd > ttl:
-        if key_to_usd in DEFAULT_EXCHANGE_RATES:
-            rate_to_usd["rate"] = DEFAULT_EXCHANGE_RATES[key_to_usd]["rate"]
-            update_at_usd = datetime.now()
-            rate_to_usd["updated_at"] = update_at_usd.isoformat()
-        else:
-            raise ApiRequestError("Невозможно получить свежий курс валют")
-    if age_currency > ttl:
-        if key_to_currency in DEFAULT_EXCHANGE_RATES:
-            rate_to_currency["rate"] = DEFAULT_EXCHANGE_RATES[key_to_currency]["rate"]
-            update_at_currency = datetime.now()
-            rate_to_currency["updated_at"] = update_at_currency.isoformat()
-        else:
-            raise ApiRequestError("Невозможно получить свежий курс валют")
+    if age_usd > ttl or age_currency > ttl:
+        try:
+            RatesUpdater().run_update()
+        except Exception as e:
+            raise ApiRequestError("Не удалось обновить курсы валют") from e
+        rates = load_json(FILE_PATH_RATES)["pairs"]
+
+        rate_to_usd = rates.get(key_to_usd)
+        rate_to_currency = rates.get(key_to_currency)
+
+        if rate_to_usd is None or rate_to_currency is None:
+            raise ApiRequestError("Не удалось получить свежие курсы валют")
+
+        update_at_usd = datetime.fromisoformat(rate_to_usd["updated_at"])
+        update_at_currency = datetime.fromisoformat(rate_to_currency["updated_at"])
+
+        now = datetime.now(timezone.utc)
+
+        if (now - update_at_usd > ttl or
+                now - update_at_currency > ttl):
+            raise ApiRequestError("Не удалось обновить устаревшие курсы валют")
 
     course_to_currency = rate_to_usd["rate"] / rate_to_currency["rate"]
     course_from_currency = rate_to_currency["rate"] / rate_to_usd["rate"]
-    save_json(FILE_PATH_RATES, rates)
 
     return {"course_to_currency": course_to_currency, "course_from_currency":
         course_from_currency, "update_time_rate":
         min(update_at_usd, update_at_currency).isoformat(),
         "from_currency": from_currency, "to_currency": to_currency}
+
+
+def show_rates(currency: str | None = None, top: int | None = None,
+               base: str = "USD"):
+    """Функция возвращает список актуальных курсов из
+    локального кеша с возможностью фильтрации."""
+    rates = load_json(FILE_PATH_RATES)["pairs"]
+    if not rates:
+        raise ValueError("Не удалось загрузить курсы валют")
+
+    if base == "USD":
+        base_rate = 1.0
+    else:
+        base_key = f"{base}_USD"
+        if base_key not in rates:
+            raise ValueError(f"Курс базовой валюты {base} не найден")
+        base_rate = rates[base_key]["rate"]
+        if base_rate <= 0:
+            raise ValueError("Курс базовой валюты должен быть положительным")
+
+    converted_rates = {}
+    if base != "USD":
+        for key, value in rates.items():
+            from_currency = key.split("_")[0]
+            if from_currency == base:
+                continue
+
+            new_key = f"{from_currency}_{base}"
+            new_rate = value["rate"] / base_rate
+
+            converted_rates[new_key] = {
+                "rate": new_rate,
+                "updated_at": value["updated_at"],
+                "source": value["source"]
+            }
+    else:
+        converted_rates = rates
+
+    if currency is None and top is None:
+        return converted_rates
+
+    if currency is not None:
+        key = f"{currency}_{base}"
+        if key in converted_rates:
+            return {key: converted_rates[key]}
+        else:
+            raise ValueError(f"Курса для валюты {currency} не найден")
+
+    if top is not None:
+        if top <= 0:
+            raise ValueError("Значение top должно быть положительным")
+        crypto_rates = {key: value for key, value in converted_rates.items()
+                        if key.split("_")[0] in ParserConfig.CRYPTO_ID_MAP}
+        sorted_rates = dict(sorted(crypto_rates.items(),
+                                   key=lambda x: x[1]["rate"],
+                                   reverse=True))
+        if top > len(sorted_rates):
+            raise ValueError(f"Указанное значение top = {top} больше, чем курсов валют")
+        if len(sorted_rates) == top:
+            return sorted_rates
+        top_rates = {}
+        counter = 0
+        for key, value in sorted_rates.items():
+            if counter == top:
+                return top_rates
+            top_rates[key] = value
+            counter += 1
+    raise ValueError("Не удалось вывести курсы валют")
+
+
+
+

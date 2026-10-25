@@ -1,5 +1,5 @@
-import time
 import logging
+import time
 
 from valutatrade_hub.infra.settings import SettingsLoader
 from valutatrade_hub.parser_service.updater import RatesUpdater

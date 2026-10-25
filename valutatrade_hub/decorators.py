@@ -1,6 +1,10 @@
 from functools import wraps
 
-from valutatrade_hub.core.exceptions import InsufficientFundsError, CurrencyNotFoundError, ApiRequestError
+from valutatrade_hub.core.exceptions import (
+    ApiRequestError,
+    CurrencyNotFoundError,
+    InsufficientFundsError,
+)
 from valutatrade_hub.logging_config import setup_logging
 
 logger = setup_logging()
@@ -16,8 +20,9 @@ def handle_cli_errors(func):
         except CurrencyNotFoundError as e:
             print(f"Ошибка: {e}")
             print("Проверьте код валюты. Примеры: USD, RUB, EUR, ETH, BTC")
-        except ApiRequestError:
-            print("Повторите попытку позже или проверьте соединение с интернетом")
+        except ApiRequestError as e:
+            print(f"Повторите попытку позже или проверьте соединение с интернетом\n"
+                  f"{e}")
         except (ValueError, TypeError) as e:
             print(f"Ошибка: {e}")
 

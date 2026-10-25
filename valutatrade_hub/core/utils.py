@@ -1,8 +1,11 @@
 import json
 from datetime import datetime
 
-from valutatrade_hub.core.constants import FILE_PATH_PORTFOLIOS, FILE_PATH_USERS, FILE_PATH_RATES
-from valutatrade_hub.core.models import Portfolio, Wallet, User
+from valutatrade_hub.core.constants import (
+    FILE_PATH_PORTFOLIOS,
+    FILE_PATH_USERS,
+)
+from valutatrade_hub.core.models import Portfolio, User, Wallet
 
 
 def load_json(filepath: str):

@@ -1,6 +1,5 @@
 from valutatrade_hub.core.exceptions import CurrencyNotFoundError
-from valutatrade_hub.core.models import FiatCurrency, CryptoCurrency, Currency
-
+from valutatrade_hub.core.models import CryptoCurrency, Currency, FiatCurrency
 
 CURRENCY_REGISTRY = {
     "USD": FiatCurrency("US Dollar", "USD", "United States"),
